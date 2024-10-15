@@ -34,12 +34,10 @@ def main():
         dt = delta / 1000
         for thing in updatable:
             thing.update(dt)
-        # player.update(dt)
 
         screen.fill("black")
         for thing in drawable:
             thing.draw(screen)
-        # player.draw(screen)
 
 
 if __name__ == "__main__":

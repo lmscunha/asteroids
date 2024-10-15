@@ -12,5 +12,5 @@ class Asteroid(circleshape.CircleShape):
         return pygame.draw.circle(screen,
                                   "white", self.position, self.radius, 2)
 
-    def udpate(self, dt):
-        return self.velocity * dt
+    def update(self, dt):
+        self.position += self.velocity * dt
