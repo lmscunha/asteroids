@@ -17,3 +17,8 @@ class CircleShape(pygame.sprite.Sprite):
 
     def udpate(self, dt):
         pass
+
+    def hasCollided(self, target):
+        distance = self.position.distance_to(target.position)
+        totalRadius = self.radius + target.radius
+        return totalRadius > distance
